@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.shopping.variables.enums.GetString" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/parent_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_height_small"
+            android:layout_marginStart="@dimen/dimen_6dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_6dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/button_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorLayoutBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="@{clickListener}"
+                android:padding="@dimen/dimen_4dp"
+                app:description="@{GetString.BUTTON_SUB}"
+                app:srcCompat="@drawable/icon_vd_subtract"
+                app:tint="@color/colorTextPrimary" />
+
+            <TextView
+                android:id="@+id/selected_items"
+                style="@style/TextViewStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorItemSelected"
+                android:gravity="center"
+                android:text="1"
+                android:paddingLeft="@dimen/dimen_12dp"
+                android:paddingRight="@dimen/dimen_12dp"
+                android:textColor="@color/colorWhiteFixed"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <ImageButton
+                android:id="@+id/button_add_more"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorLayoutBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="@{clickListener}"
+                android:padding="@dimen/dimen_6dp"
+                app:description="@{GetString.BUTTON_ADD}"
+                app:srcCompat="@drawable/icon_vd_add"
+                app:tint="@color/colorTextPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_height_small"
+            android:layout_marginStart="@dimen/dimen_4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_4dp"
+            android:background="@drawable/button_background_rect_green"
+            android:onClick="@{clickListener}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_1dp"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_8dp"
+                android:paddingRight="@dimen/dimen_8dp"
+                android:textColor="@color/colorItemSelected"
+                android:textSize="@dimen/dimen_13sp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_icon_size_very_small"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_6dp"
+                android:layout_marginTop="@dimen/dimen_1dp"
+                android:layout_marginRight="@dimen/dimen_6dp"
+                android:layout_marginBottom="@dimen/dimen_1dp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/icon_vd_add" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/button_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_height_small"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@drawable/button_background_positive"
+            android:onClick="@{clickListener}"
+            android:padding="@dimen/dimen_4dp"
+            android:tint="@color/colorWhiteFixed"
+            android:visibility="gone"
+            app:srcCompat="@drawable/icon_vd_delete" />
+    </LinearLayout>
+</layout>

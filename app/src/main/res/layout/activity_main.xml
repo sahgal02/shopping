@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include layout="@layout/include_app_bar_layout" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_app_bar_shadow_down" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/id_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_app_bar_height"
+                android:layout_gravity="bottom"
+                android:background="@color/colorWhite"
+                app:elevation="0dp"
+                app:itemBackground="@color/colorWhite"
+                app:itemIconSize="22dp"
+                app:itemIconTint="@color/color_menu_bottom"
+                app:itemRippleColor="@color/colorRippleEffect"
+                app:itemTextAppearanceActive="@style/BottomTextViewStyle"
+                app:itemTextAppearanceInactive="@style/BottomTextViewInActiveStyle"
+                app:itemTextColor="@color/color_menu_bottom"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_home_navigation" />
+
+            <include layout="@layout/include_connection_layout" />
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

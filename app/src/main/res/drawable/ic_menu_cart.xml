@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:drawable="@drawable/icon_vd_cart"
+      android:gravity="center" />
+  <item
+      android:id="@+id/ic_badge_cart"
+      android:drawable="@drawable/icon_vd_cart" />
+</layer-list>

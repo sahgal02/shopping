@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBarTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLength">20</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:textColor">@color/colorTextPrimaryLight</item>
+    </style>
+
+    <style name="BottomTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="BottomTextViewInActiveStyle" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+
+    <style name="TextViewStyleLight" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:lineSpacingExtra">-3dp</item>
+    </style>
+
+    <style name="TextViewStyleRegular" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">-2dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextViewStyleMedium" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">-2dp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="ButtonStyleMedium" parent="android:Widget.Button">
+        <item name="android:lineSpacingExtra">-3dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="CardStyle" parent="Base.CardView">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardElevation">1.5dp</item>
+    </style>
+
+
+    <style name="TextViewStyleBold" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">-3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="TextViewStyleTitle" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">-3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/dimen_20sp</item>
+    </style>
+
+
+    <style name="TextViewStyleHeader" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">-3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+    </style>
+
+</resources>

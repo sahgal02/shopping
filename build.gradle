@@ -1,0 +1,43 @@
+buildscript {
+    ext.versions = [
+            'compileSdk'            : 32,
+            'build'                 : '31.0.0',
+            'minSdk'                : 21,
+            'targetSdk'             : 32,
+            'kotlin_version'        : '1.7.10',
+    ]
+    ext {
+        def props = new Properties()
+        file("version.properties").withInputStream { props.load(it) }
+        global_version_code = props.getProperty("VERSION_CODE").toInteger()
+        global_version_name = props.get("VERSION_NAME")
+        global_version_code_dev = props.getProperty("VERSION_CODE_DEV").toInteger()
+        global_version_name_dev = props.get("VERSION_NAME_DEV")
+        global_play_auth = props.get("PLAY_AUTH")
+        global_app_compat = props.get("APP_COMPAT")
+        global_material = props.get("MATERIAL")
+        global_support = props.get("SUPPORT")
+        global_card = props.get("CARD")
+        global_worker = props.get("WORKER")
+        global_life_cycle = props.get("LIFE_CYCLE")
+        global_room = props.get("ROOM")
+        global_kotlin_version = props.get("KOTLIN_VERSION")
+        global_firebase_pom_version = props.get("FIREBASE_POM_VERSION")
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
+        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath 'com.google.gms:google-services:4.3.14'
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.44'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

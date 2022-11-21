@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@drawable/ic_menu_notification"
+        android:title="@string/string_menu_icon_desc_notification"
+        android:titleCondensed="@string/string_menu_icon_desc_notification"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/ic_menu_cart"
+        android:title="@string/string_menu_icon_desc_cart"
+        android:titleCondensed="@string/string_menu_icon_desc_cart"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_clear_bookmark"
+        android:title="@string/string_menu_icon_desc_clear_bookmark"
+        android:titleCondensed="@string/string_menu_icon_desc_clear_bookmark"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_rate"
+        android:title="@string/string_menu_icon_desc_rate"
+        android:titleCondensed="@string/string_menu_icon_desc_rate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_privacy"
+        android:title="@string/string_menu_icon_desc_privacy"
+        android:titleCondensed="@string/string_menu_icon_desc_privacy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_terms"
+        android:title="@string/string_menu_icon_desc_terms"
+        android:titleCondensed="@string/string_menu_icon_desc_terms"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/string_menu_icon_desc_logout"
+        android:titleCondensed="@string/string_menu_icon_desc_logout"
+        app:showAsAction="never" />
+</menu>

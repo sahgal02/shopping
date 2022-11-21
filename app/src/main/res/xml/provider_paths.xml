@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="Shopping/"
+        path="/Shopping/" />
+    <external-path
+        name="Shopping/"
+        path="/Shopping/" />
+
+    <files-path name="external_files" path="."/>
+
+</paths>

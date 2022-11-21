@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:drawable="@drawable/icon_vd_fav_list_filled"
+      android:gravity="center" />
+  <item
+      android:id="@+id/ic_badge_bookmark"
+      android:drawable="@drawable/icon_vd_fav_list_filled" />
+</layer-list>

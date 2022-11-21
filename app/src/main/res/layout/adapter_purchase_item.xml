@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <import type="com.shopping.variables.enums.GetString" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/TextViewStyleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:id="@+id/description"
+                    style="@style/TextViewStyleRegular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextPrimaryLight"
+                    android:textSize="@dimen/dimen_12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_rupee_small"
+                            android:layout_height="@dimen/dimen_rupee_small"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_2dp"
+                            android:tint="@color/colorPrice"
+                            app:srcCompat="@drawable/icon_vd_rupee" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            style="@style/TextViewStyleRegular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrice"
+                            android:textSize="@dimen/dimen_22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_4dp"
+                            android:textColor="@color/colorTextPrimaryLight"
+                            android:textSize="@dimen/dimen_11sp"
+                            app:text="@{GetString.LABEL_PER_UNIT}" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextPrimaryLight"
+                        android:textSize="@dimen/dimen_11sp"
+                        app:text="@{GetString.LABEL_EXCLUDE_TAX}" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/include_add_item"
+                    bind:clickListener="@{clickListener}" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/divider"
+            layout="@layout/include_vertical_divider" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shopping</string>
+    <string name="string_message_check_connection">Check connection and try again.</string>
+    <string name="string_message_no_internet">No internet</string>
+    <string name="string_icon_desc_back">icon</string>
+    <string name="string_message_connection_title">Oops! Internet Issue</string>
+    <string name="string_message_connection_description">It seems you don\'t have an internet connection. Please check your connection and try again.</string>
+    <string name="string_button_name_check_connection">Check Connection</string>
+
+    <string name="string_menu_bottom_icon_desc_product">Products</string>
+    <string name="string_menu_bottom_icon_desc_bookmark">Favorite</string>
+    <string name="string_menu_icon_desc_notification">Notification</string>
+    <string name="string_menu_icon_desc_cart">Cart</string>
+    <string name="string_menu_icon_desc_bookmark">Favorite</string>
+    <string name="string_menu_icon_desc_overflow">Overflow</string>
+    <string name="string_menu_icon_desc_rate">Rate</string>
+    <string name="string_menu_icon_desc_privacy">Privacy</string>
+    <string name="string_menu_icon_desc_clear_bookmark">Clear bookmark</string>
+    <string name="string_menu_icon_desc_logout">Logout</string>
+    <string name="string_menu_icon_desc_terms">Terms</string>
+
+</resources>

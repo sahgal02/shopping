@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+        <import type="com.shopping.variables.enums.GetString" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="size"
+            type="Integer" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/id_view_left"
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="@dimen/dimen_12dp"
+            android:visibility="@{position!=size-1 ? View.VISIBLE : View.GONE}" />
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="@dimen/dimen_product_tile_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_slice"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_product_horizontal_image_size"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_product_horizontal_image_size"
+                    android:background="@drawable/placeholder_one"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@{clickListener}" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/bookmark"
+                    android:layout_width="@dimen/dimen_product_tile_bookmark"
+                    android:layout_height="@dimen/dimen_product_tile_bookmark"
+                    android:layout_gravity="start|bottom"
+                    android:layout_marginStart="@dimen/dimen_6dp"
+                    android:layout_marginBottom="@dimen/dimen_6dp"
+                    android:background="@drawable/circular_image"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="@{clickListener}"
+                    android:padding="@dimen/dimen_4dp"
+                    app:srcCompat="@drawable/icon_vd_fav"
+                    app:tint="@color/colorIconLight" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextViewStyleHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:maxLines="1"
+                android:onClick="@{clickListener}"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/dimen_13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_8dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_product_tile_rupee_horizontal"
+                            android:layout_height="@dimen/dimen_product_tile_rupee_horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/dimen_1dp"
+                            android:tint="@color/colorPrice"
+                            app:srcCompat="@drawable/icon_vd_rupee" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            style="@style/TextViewStyleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="@color/colorPrice"
+                            android:textSize="@dimen/dimen_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_4dp"
+                            android:textColor="@color/colorTextPrimaryLight"
+                            android:textSize="@dimen/dimen_9sp"
+                            app:text="@{GetString.LABEL_PER_UNIT}" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextViewStyleLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textColor="@color/colorTextPrimary"
+                        android:textSize="@dimen/dimen_9sp"
+                        app:text="@{GetString.LABEL_EXCLUDE_TAX}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/parent_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_gravity="bottom"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/button_sub"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@color/colorLayoutBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="@{clickListener}"
+                            android:padding="@dimen/dimen_6dp"
+                            app:description="@{GetString.BUTTON_SUB}"
+                            app:srcCompat="@drawable/icon_vd_subtract"
+                            app:tint="@color/colorTextPrimary" />
+
+                        <TextView
+                            android:id="@+id/selected_items"
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorItemSelected"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_12dp"
+                            android:paddingRight="@dimen/dimen_12dp"
+                            android:textColor="@color/colorWhiteFixed"
+                            android:textSize="@dimen/dimen_13sp" />
+
+                        <ImageButton
+                            android:id="@+id/button_add_more"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@color/colorLayoutBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="@{clickListener}"
+                            android:padding="@dimen/dimen_6dp"
+                            app:description="@{GetString.BUTTON_ADD}"
+                            app:srcCompat="@drawable/icon_vd_add"
+                            app:tint="@color/colorTextPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/button_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_24dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/button_background_rect_green"
+                        android:onClick="@{clickListener}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/button_text"
+                            style="@style/TextViewStyleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dimen_1dp"
+                            android:background="@color/colorWhite"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/dimen_6dp"
+                            android:paddingRight="@dimen/dimen_6dp"
+                            android:textColor="@color/colorItemSelected"
+                            android:textSize="@dimen/dimen_11sp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dimen_14dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_6dp"
+                            android:layout_marginRight="@dimen/dimen_6dp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/icon_vd_add" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/id_view_right"
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="@dimen/dimen_12dp"
+            android:visibility="@{position==size-1 ? View.VISIBLE : View.GONE}" />
+
+    </LinearLayout>
+
+</layout>

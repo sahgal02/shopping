@@ -1,0 +1,122 @@
+{
+  "app_name": {
+    "en": "Shopping",
+    "hi": ""
+  },
+  "app_display_name": {
+    "en": "Shopping",
+    "hi": ""
+  },
+  "again_exit": {
+    "en": "Press to exit",
+    "hi": ""
+  },
+  "heading_similar": {
+    "en": "Similar products",
+    "hi": ""
+  },
+  "icon_desc_bookmark": {
+    "en": "Bookmark",
+    "hi": ""
+  },
+  "label_click_or_add": {
+    "en": "Click to add items in cart",
+    "hi": ""
+  },
+  "button_checkout": {
+    "en": "Checkout",
+    "hi": ""
+  },
+  "button_add_more": {
+    "en": "Add more",
+    "hi": ""
+  },
+  "button_add": {
+    "en": "Add",
+    "hi": "Add"
+  },
+  "button_sub": {
+    "en": "Subtract",
+    "hi": ""
+  },
+  "empty_button_bookmark": {
+    "en": "Empty bucket",
+    "hi": ""
+  },
+  "empty_label_bookmark_desc": {
+    "en": "Please mark items favorite to fill this place them",
+    "hi": ""
+  },
+  "empty_label_bookmark_title": {
+    "en": "Faviorte Items",
+    "hi": ""
+  },
+  "empty_label_product_title": {
+    "en": "Oops! we are empty",
+    "hi": ""
+  },
+  "empty_label_product_desc": {
+    "en": "Seems no item available to sale today\nPlease check later for more updates",
+    "hi": ""
+  },
+  "empty_button_product": {
+    "en": "Refresh",
+    "hi": ""
+  },
+  "label_find_me": {
+    "en": "Find me",
+    "hi": ""
+  },
+  "label_supplier": {
+    "en": "Direct Supplier",
+    "hi": ""
+  },
+  "label_rating": {
+    "en": "Rating",
+    "hi": ""
+  },
+  "button_report": {
+    "en": "Click to report?",
+    "hi": ""
+  },
+  "label_first_rating": {
+    "en": "First to\nRate",
+    "hi": ""
+  },
+  "label_exclude_tax": {
+    "en": "Exclude taxes",
+    "hi": ""
+  },
+  "label_per_unit": {
+    "en": "/unit",
+    "hi": ""
+  },
+  "icon_desc_rate": {
+    "en": "Rate",
+    "hi": ""
+  },
+  "icon_desc_privacy": {
+    "en": "Privacy",
+    "hi": ""
+  },
+  "icon_desc_terms": {
+    "en": "Terms",
+    "hi": ""
+  },
+  "icon_desc_logout": {
+    "en": "Logout",
+    "hi": ""
+  },
+  "icon_desc_cart": {
+    "en": "Cart",
+    "hi": ""
+  },
+  "icon_desc_clear_bookmark": {
+    "en": "Clear bookmark",
+    "hi": ""
+  },
+  "icon_desc_notification": {
+    "en": "Notification",
+    "hi":""
+  }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".ui.activities.ConnectionActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_inbox_image"
+                android:layout_height="@dimen/dimen_inbox_image"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                app:srcCompat="@drawable/icon_vd_no_internet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/dimen_8dp"
+                android:text="@string/string_message_connection_title"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/dimen_17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_24dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp"
+                android:text="@string/string_message_connection_description"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/dimen_14sp" />
+
+            <include layout="@layout/include_progress_bar" />
+
+            <Button
+                android:id="@+id/button_submit"
+                style="?attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_button_height"
+                android:layout_margin="@dimen/dimen_4dp"
+                android:background="@drawable/button_style_primary"
+                android:onClick="@{clickListener}"
+                android:paddingLeft="@dimen/dimen_20dp"
+                android:paddingRight="@dimen/dimen_20dp"
+                android:text="@string/string_button_name_check_connection"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/dimen_button_text_size" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

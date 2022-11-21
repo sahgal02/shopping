@@ -1,0 +1,47 @@
+<resources>
+
+    <style name="AppThemeWhite" parent="AppThemeWhite.Base" />
+
+    <style name="AppThemeWhite.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorSecondary">@color/colorWhite</item>
+        <item name="colorSecondaryVariant">@color/colorWhite</item>
+        <item name="colorOnSecondary">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="actionMenuTextColor">@color/colorTextPrimary</item>
+        <item name="colorControlActivated">@color/colorTextPrimary</item>
+        <item name="android:textViewStyle">@style/TextViewStyleRegular</item>
+        <item name="buttonStyle">@style/ButtonStyleMedium</item>
+    </style>
+
+    <!--Toolbar theme for AppTheme-->
+    <style name="AppBarTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">19sp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--Toolbar popup or overflow for AppTheme-->
+    <style name="AppBarPop" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextPrimaryLight</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+
+</resources>

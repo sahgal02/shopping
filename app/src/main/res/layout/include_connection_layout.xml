@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_text_connection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:padding="@dimen/dimen_4dp"
+    android:text="@string/string_message_no_internet"
+    android:textColor="@color/colorTextPrimary"
+    android:textSize="@dimen/dimen_12sp"
+    android:visibility="gone" />
