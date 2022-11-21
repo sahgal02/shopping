@@ -118,5 +118,9 @@
   "icon_desc_notification": {
     "en": "Notification",
     "hi":""
+  },
+  "button_pay_colon": {
+    "en": "Pay:",
+    "hi":""
   }
 }
