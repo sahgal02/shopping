@@ -34,15 +34,6 @@ object Utils {
     }
 
     /**
-     * [Toast] function for ease using [message] and [context] of Page
-     */
-    fun toast(context: Context, message: String?) {
-        message?.let {
-            Toast.makeText(context, message, Toast.LENGTH_LONG).show()
-        }
-    }
-
-    /**
      * Function used for Status bar color white
      */
     fun doStatusColorWhite(window: Window) {

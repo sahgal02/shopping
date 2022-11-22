@@ -121,11 +121,13 @@ class PreviewActivity : BaseActivity(), View.OnClickListener {
                 buttonPay.visibility = View.INVISIBLE
             } else {
                 buttonPay.visibility = View.VISIBLE
-                buttonPay.setString(GetString.BUTTON_PAY_COLON, "₹${MyApplication.cartTotal}")
+                buttonPay.setString(
+                    GetString.BUTTON_PAY_COLON,
+                    extra = "₹${String.format("%.1f", MyApplication.cartTotal)}"
+                )
             }
         }
     }
-
 
     override fun initializeData() {
         super.initializeData()

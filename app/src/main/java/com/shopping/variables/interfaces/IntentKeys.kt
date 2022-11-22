@@ -1,9 +1,5 @@
 package com.shopping.variables.interfaces
 
-/**
-by 16-Sep-2020 18:10
- */
-
 interface IntentKeys {
     companion object {
         const val INTENT_FOR_MODEL = "intent_model"

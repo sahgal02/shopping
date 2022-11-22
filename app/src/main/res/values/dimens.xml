@@ -56,7 +56,7 @@
     <dimen name="dimen_10sp">10sp</dimen>
     <dimen name="dimen_product_tile_width">170dp</dimen>
     <dimen name="dimen_product_horizontal_image_size">140dp</dimen>
-    <dimen name="dimen_product_tile_bookmark">30dp</dimen>
+    <dimen name="dimen_product_tile_bookmark">28dp</dimen>
     <dimen name="dimen_product_image_size">100dp</dimen>
     <dimen name="dimen_18sp">18sp</dimen>
     <dimen name="dimen_14dp">14dp</dimen>

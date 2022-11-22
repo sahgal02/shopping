@@ -33,21 +33,18 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
      * [uploading] variable hold value for Api Transaction. User [setUploadStatus] and [isUploading]
      * True if api transaction pending else false
      *
-      by Dec 18, 2020
      */
     private var uploading: Boolean = false
 
     /**
      * [canLoadMore] provide data is more to load or not. Use [setCanLoadMore] and [canLoadMore]
      *
-      by Dec 18, 2020
      */
     private var canLoadMore: Boolean = false
 
     /**
      * [changed] check user edit something so need to anounce before back
      *
-      by 8 Dec, 2020
      */
     private var changed: Boolean = false
 
@@ -106,7 +103,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Only view initialization
      *
-      by Dec 18, 2020
      */
     override fun initializeView() {
 
@@ -115,7 +111,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * All kind of listeners call here
      *
-      by Dec 18, 2020
      */
     override fun initializeListeners() {
 
@@ -124,7 +119,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Any kind of Pickers implementation
      *
-      by Dec 18, 2020
      */
     override fun initializePicker() {
 
@@ -133,7 +127,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Data going to be fill in UI comes here
      *
-      by Dec 18, 2020
      */
     override fun initializeData() {
 
@@ -142,7 +135,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * User of [androidx.lifecycle.ViewModel] or if need initialization comes their
      *
-      by Dec 18, 2020
      */
     override fun initializeViewModel() {
 
@@ -151,7 +143,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * In case of [com.google.android.material.tabs.TabLayout] and [androidx.viewpager.widget.ViewPager]
      *
-      by Dec 18, 2020
      */
     override fun initializeTabView() {
 
@@ -160,7 +151,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * User for [androidx.recyclerview.widget.RecyclerView.Recycler] Implementation
      *
-      by Dec 18, 2020
      */
     override fun initializeRecyclerView() {
 
@@ -169,7 +159,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * In case of [androidx.recyclerview.widget.RecyclerView.Recycler] we have function to maintain no data information view
      *
-      by Dec 18, 2020
      */
     override fun initializeEmptyView(isEmpty: Boolean) {
 
@@ -178,7 +167,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Any kind for Frag initialization of Adding
      *
-      by Dec 18, 2020
      */
     override fun initializeFragsView() {
 
@@ -192,7 +180,6 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Function to call from [onDestroy] and on backpress to cancel threads or task running
      *
-      by Dec 18, 2020
      */
     override fun closeEverything() {
 
@@ -200,7 +187,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
 
     /**
      * Update status of Api transaction by this
-      by Dec 18, 2020
+      
      */
     fun setUploadStatus(isUploading: Boolean) {
         this.uploading = isUploading
@@ -209,7 +196,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Get status of api transaction by this
      *
-      by Dec 18, 2020
+      
      */
     fun isUploading(): Boolean {
         return uploading
@@ -218,7 +205,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
     /**
      * Check something is changed or not
      *
-      by Dec 8, 2020
+      com.shopping.utilities.MyApplication
      */
     fun isChanged(): Boolean {
         return changed
@@ -226,7 +213,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
 
     /**
      * Update load more availability by this
-      by Dec 8, 2020
+      com.shopping.utilities.MyApplication
      */
     fun setChanged(changed: Boolean) {
         this.changed = changed
@@ -234,7 +221,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
 
     /**
      * Update load more availability by this
-      by Dec 18, 2020
+      
      */
     fun setCanLoadMore(canLoadMore: Boolean) {
         this.canLoadMore = canLoadMore
@@ -242,7 +229,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
 
     /**
      * Check connection by [Utils.isNetworkAvailable]
-      by Dec 18, 2020
+      
      */
     fun hasConnection(): Boolean {
         return Utils.isNetworkAvailable(requireContext())
@@ -250,7 +237,7 @@ abstract class BaseSheetDialogFragment : BottomSheetDialogFragment(), BluePrint.
 
     /**
      * Get status of load more availability by this
-      by Dec 18, 2020
+      
      */
     fun canLoadMore(): Boolean {
         return canLoadMore

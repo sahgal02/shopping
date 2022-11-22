@@ -250,7 +250,6 @@ abstract class BaseFragment : Fragment(), BluePrint.OfView, BluePrint.OfFrag,
     /**
      * Check something is changed or not
      *
-    by Dec 8, 2020
      */
     fun isChanged(): Boolean {
         return changed
@@ -258,7 +257,6 @@ abstract class BaseFragment : Fragment(), BluePrint.OfView, BluePrint.OfFrag,
 
     /**
      * Update load more availability by this
-    by Dec 8, 2020
      */
     fun setChanged(changed: Boolean) {
         this.changed = changed

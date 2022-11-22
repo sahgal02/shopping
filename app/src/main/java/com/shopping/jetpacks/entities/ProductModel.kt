@@ -18,19 +18,24 @@ data class ProductResponse(
 @Parcelize
 @Entity(tableName = "products")
 data class ProductModel(
+
     @PrimaryKey(autoGenerate = false)
     @SerializedName("id")
     @ColumnInfo(name = "product_id")
     val id: String = "",
+
     @SerializedName("citrusId")
     @ColumnInfo(name = "citrus_id")
     val citrusId: String? = "",
+
     @SerializedName("title")
     @ColumnInfo(name = "title")
     val title: String? = "",
+
     @SerializedName("brand")
     @ColumnInfo(name = "brand")
     val brand: String? = "",
+
     @SerializedName("imageURL")
     @ColumnInfo(name = "image_url")
     val imageURL: String? = "",

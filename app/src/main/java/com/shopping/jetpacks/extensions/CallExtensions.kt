@@ -6,7 +6,6 @@ import com.google.gson.annotations.SerializedName
 import org.json.JSONObject
 import retrofit2.Call
 
-
 @SuppressLint("DefaultLocale")
 fun <F, T> Call<F>.mapToEntity(
     mapper: (F) -> T

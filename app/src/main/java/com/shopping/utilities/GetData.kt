@@ -4,7 +4,6 @@ import java.io.InputStream
 
 /**
  * [GetData] provide hardcoded JSON, Values like : [com.shopping.variables.enums.GetString]
-by 15-Oct-2020 10:21
  */
 object GetData {
 
